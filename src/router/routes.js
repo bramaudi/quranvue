@@ -5,7 +5,7 @@ const routes = [
     component: () => import('layouts/Layout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: '/surah/:nomor', component: () => import('components/surahRead.vue'), name: 'Surah' }
+      { path: '/surah/:nomor', component: () => import('pages/surahRead.vue'), name: 'Surah' }
     ]
   },
   {

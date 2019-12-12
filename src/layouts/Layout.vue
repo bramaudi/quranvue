@@ -13,6 +13,15 @@
           Quran Vue
         </q-toolbar-title>
 
+        <!-- <q-space />
+
+        <q-input dark dense standout v-model="text" label="Cari Ayat, misal: 2:280" input-class="text-right" class="q-ml-lg">
+          <template v-slot:append>
+            <q-icon v-if="text === ''" name="search" />
+            <q-icon v-else name="clear" class="cursor-pointer" @click="text = ''" />
+          </template>
+        </q-input> -->
+
         <q-btn dense flat round icon="menu" @click="right = !right" />
       </q-toolbar>
     </q-header>
@@ -43,6 +52,25 @@ export default {
   data () {
     return {
       right: false
+    }
+  },
+  created () {
+    this.showLoading()
+  },
+  methods: {
+    showLoading () {
+      this.$q.loading.show()
+
+      this.timer = setTimeout(() => {
+        this.$q.loading.hide()
+        this.timer = void 0
+      }, 2000)
+    }
+  },
+  beforeDestroy () {
+    if (this.timer !== void 0) {
+      clearTimeout(this.timer)
+      this.$q.loading.hide()
     }
   }
 }

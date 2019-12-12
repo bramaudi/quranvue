@@ -15,7 +15,7 @@
       transition="scale"
       once
     >
-      <Surah :data="item" />
+      <Surah :data="item"/>
     </q-intersection>
 
   </q-page>

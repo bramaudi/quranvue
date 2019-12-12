@@ -4,7 +4,9 @@
       params: {
         nomor: data.nomor
       }
-    }" class="link">
+    }"
+    class="link"
+    >
    <q-card square flat bordered class="q-mt-md q-mb-md">
       <q-card-section>
         {{ data.nomor }} - {{ data.nama }}

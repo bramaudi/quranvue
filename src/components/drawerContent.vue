@@ -4,17 +4,21 @@
 
       <q-item to="/" exact clickable v-ripple>
           <q-item-section avatar>
-            <q-icon name="house" />
+            <q-icon name="house" class="icon"/>
           </q-item-section>
           <q-item-section>Beranda</q-item-section>
       </q-item>
 
+      <q-separator />
+
       <q-item to="/about" exact clickable v-ripple>
           <q-item-section avatar>
-            <q-icon name="account_circle" />
+            <q-icon name="account_circle" class="icon"/>
           </q-item-section>
           <q-item-section>Tentang</q-item-section>
       </q-item>
+
+      <q-separator />
 
       <q-item tag="label" v-ripple>
         <q-item-section>
@@ -24,6 +28,8 @@
           <q-toggle color="accent" v-model="darkMode" />
         </q-item-section>
       </q-item>
+
+      <q-separator />
 
     </q-list>
   </q-scroll-area>
@@ -42,3 +48,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.menu-list {
+  font-size: large;
+  .icon {
+    font-size: 1.5em;
+  }
+}
+</style>
