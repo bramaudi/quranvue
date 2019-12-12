@@ -31,8 +31,9 @@
         :key="index"
         transition="scale"
         once
+        :id="elementID(index)"
       >
-        <q-card flat bordered :id="elementID(index)">
+        <q-card flat bordered>
           <q-btn outline color="primary" :label="index" style="float: left" />
           <q-card-section class="arabic text-h4 text-right">
             {{ ayah }}
