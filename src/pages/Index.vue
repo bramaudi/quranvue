@@ -4,7 +4,7 @@
     <q-input color="accent" outlined v-model="cari" label="Cari Nama Surat">
       <template v-slot:append>
         <q-avatar>
-          <q-icon name="close" @click="cari = ''" class="cursor-pointer" />
+          <q-icon name="ion-close" @click="cari = ''" class="cursor-pointer" />
         </q-avatar>
       </template>
     </q-input>

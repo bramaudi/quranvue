@@ -4,7 +4,7 @@
 
       <q-item to="/" exact clickable v-ripple>
           <q-item-section avatar>
-            <q-icon name="house" class="icon"/>
+            <q-icon name="ion-home" class="icon"/>
           </q-item-section>
           <q-item-section>Beranda</q-item-section>
       </q-item>
@@ -13,7 +13,7 @@
 
       <q-item to="/about" exact clickable v-ripple>
           <q-item-section avatar>
-            <q-icon name="account_circle" class="icon"/>
+            <q-icon name="ion-information-circle-outline" class="icon"/>
           </q-item-section>
           <q-item-section>Tentang</q-item-section>
       </q-item>
@@ -21,6 +21,10 @@
       <q-separator />
 
       <q-item tag="label" v-ripple>
+        <q-item-section avatar>
+          <q-icon v-if="this.$q.dark.isActive" name="ion-moon" class="icon"/>
+          <q-icon v-else name="ion-sunny" class="icon"/>
+        </q-item-section>
         <q-item-section>
           <q-item-label>Dark Mode</q-item-label>
         </q-item-section>

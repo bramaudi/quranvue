@@ -4,14 +4,9 @@
     <q-header reveal bordered class="bg-primary text-white">
       <q-toolbar class="text-white">
         <router-link to="/" class="text-white">
-          <q-btn flat round dense icon="house" />
+          <q-btn flat round dense icon="ion-home" />
         </router-link>
-        <q-toolbar-title>
-          <!-- <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
-          </q-avatar> -->
-          Quran Vue
-        </q-toolbar-title>
+        <q-toolbar-title>Quran Vue</q-toolbar-title>
 
         <!-- <q-space />
 
@@ -22,11 +17,11 @@
           </template>
         </q-input> -->
 
-        <q-btn dense flat round icon="menu" @click="right = !right" />
+        <q-btn dense flat round icon="ion-menu" @click="right = !right" />
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="right" side="right" bordered>
+    <q-drawer v-model="right" side="right" show-if-above bordered>
       <!-- drawer content -->
       <drawer />
     </q-drawer>
@@ -34,7 +29,7 @@
     <q-page-container>
       <router-view />
       <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
-        <q-btn fab icon="keyboard_arrow_up" color="accent" />
+        <q-btn fab icon="ion-arrow-round-up" color="accent" />
       </q-page-scroller>
     </q-page-container>
 
