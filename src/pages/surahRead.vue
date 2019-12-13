@@ -34,8 +34,8 @@
         :id="elementID(index)"
       >
         <q-card flat bordered>
-          <q-btn outline color="primary" :label="index" style="float: left" />
-          <q-card-section class="arabic text-h4 text-right">
+          <q-btn outline color="accent" :label="index" style="float: left" />
+          <q-card-section class="arabic text-h4 text-right q-pa-lg">
             {{ ayah }}
           </q-card-section>
           <q-separator />
@@ -57,7 +57,7 @@ export default {
   data () {
     return {
       ayat: null,
-      surah: require(`../json/surah/${this.$route.params.nomor}.json`)[this.$route.params.nomor]
+      surah: require(`../assets/json/surah/${this.$route.params.nomor}.json`)[this.$route.params.nomor]
     }
   },
   methods: {

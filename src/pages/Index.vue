@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       cari: '',
-      surat: require('../json/surah.json').hasil
+      surat: require('../assets/json/surah.json').hasil
     }
   },
   components: {

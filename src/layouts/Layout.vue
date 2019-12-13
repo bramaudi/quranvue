@@ -26,7 +26,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="right" side="right" overlay behavior="mobile" bordered>
+    <q-drawer v-model="right" side="right" bordered>
       <!-- drawer content -->
       <drawer />
     </q-drawer>
