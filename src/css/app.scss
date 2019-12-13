@@ -1,24 +1,20 @@
 @font-face {
-  font-family: "Lateef";
+  font-family: "Kemenag";
   src: url('~assets/LPMQ IsepMisbah.ttf');
 }
 
 .arabic {
-  font-family: "Lateef";
+  font-family: "Kemenag";
 }
 
-::-webkit-scrollbar-track
-{
-  visibility: hidden;
-}
+// Hide scroll bar
+::-webkit-scrollbar-track { visibility: hidden; }
+::-webkit-scrollbar { width: 0; visibility: hidden; }
+::-webkit-scrollbar-thumb { visibility: hidden; }
 
-::-webkit-scrollbar
-{
-  width: 0;
-  visibility: hidden;
-}
-
-::-webkit-scrollbar-thumb
-{
-  visibility: hidden;
+// Hide scrollbar on input number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
