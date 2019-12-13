@@ -35,7 +35,7 @@
       >
         <q-card flat bordered>
           <q-btn outline color="accent" :label="index" style="float: left" />
-          <q-card-section class="arabic text-h4 text-right q-pa-lg">
+          <q-card-section class="arabic text-h4 text-right q-pa-md">
             {{ ayah }}
           </q-card-section>
           <q-separator />

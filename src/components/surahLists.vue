@@ -11,7 +11,7 @@
       <q-card-section>
         {{ data.nomor }} - {{ data.nama }}
         <br />
-        ({{ data.asma }})
+        (<span class="arabic">{{ data.asma }}</span>)
       </q-card-section>
     </q-card>
   </router-link>
