@@ -98,13 +98,13 @@ module.exports = function (ctx) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Quran Vue',
-        short_name: 'Quran Vue',
-        description: 'A Quran build with Vue',
+        name: 'Al-Qur\'an',
+        short_name: 'Al-Qur\'an',
+        description: 'A Quran PWA build with Vue using Quasar Framework.',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#ffffff',
-        theme_color: '#027be3',
+        background_color: '#00a352',
+        theme_color: '#00a352',
         icons: [
           {
             'src': 'statics/icons/icon-128x128.png',
