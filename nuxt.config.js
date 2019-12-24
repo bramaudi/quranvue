@@ -47,7 +47,7 @@ export default {
       description: 'Quran with Vue',
       theme_color: '#50d890'
     }
-  }
+  },
   /*
    ** Build configuration
    */
