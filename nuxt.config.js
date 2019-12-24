@@ -41,6 +41,13 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa'],
+  pwa: {
+    meta: {
+      name: 'Quran Vue',
+      description: 'Quran with Vue',
+      theme_color: '#50d890'
+    }
+  }
   /*
    ** Build configuration
    */
