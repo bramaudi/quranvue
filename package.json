@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Quran build with Vue",
   "productName": "Quran Vue",
-  "cordovaId": "org.cordova.quasar.app",
+  "cordovaId": "id.bramaudi.quranvue",
   "capacitorId": "",
   "author": "Brama Udi <bramaudi.al@gmail.com>",
   "private": true,
