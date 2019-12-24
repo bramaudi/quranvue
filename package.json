@@ -6,14 +6,15 @@
   "private": true,
   "scripts": {
     "dev": "nuxt -H 0.0.0.0",
-    "build": "nuxt build",
+    "build": "nuxt build && mv dist public",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0"
+    "global": "^4.4.0",
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
